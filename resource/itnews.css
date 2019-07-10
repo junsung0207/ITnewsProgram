@@ -1,0 +1,24 @@
+.reloadbox{
+  -fx-background-color:white;
+  -fx-border:none;
+  -fx-border-radius: 100px;
+  -fx-font-size:20pt;
+}
+
+.openurlbox{
+  -fx-background-color:white;
+  -fx-border:none;
+  -fx-border-radius: 30px;
+  -fx-font-size:20pt;
+}
+
+.opencombobox{
+  -fx-background-color:white;
+  -fx-border:none;
+  -fx-border-radius: 30px;
+  -fx-font-size:20pt;
+}
+
+.background{
+  -fx-background-color:rgb(113, 225, 255);
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1279.0" styleClass="background" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="program_title" layoutX="225.0" layoutY="27.0" prefHeight="57.0" prefWidth="263.0" text="IT FOR YOU">
+         <font>
+            <Font name="Comic Sans MS" size="41.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="urlChoose_box" layoutX="620.0" layoutY="55.0" onAction="#selected" prefHeight="52.0" prefWidth="212.0" styleClass="openurlbox" />
+      <ListView fx:id="listbox" layoutX="64.0" layoutY="124.0" onMouseClicked="#selectedURLbox" prefHeight="524.0" prefWidth="292.0" />
+      <WebView fx:id="webbox" layoutX="358.0" layoutY="124.0" prefHeight="524.0" prefWidth="837.0" />
+      <Button fx:id="reloadbox" layoutX="854.0" layoutY="53.0" mnemonicParsing="false" onAction="#selectedURLbox" styleClass="reloadbox" text="Reload" />
+      <Button fx:id="openurlbox" layoutX="982.0" layoutY="53.0" mnemonicParsing="false" onAction="#OpenWeb" styleClass="openurlbox" text="Open WEbPAGE" />
+      <Label fx:id="program_title1" layoutX="210.0" layoutY="72.0" prefHeight="52.0" prefWidth="292.0" text="IT news에 관심이 많은 당신에게">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="693.0" layoutY="27.0" text="어디 뉴스?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@resource/itnews.css" /> <!--빨간글씨긴 하나, 이렇게 경로를 설정해야 스타일시트 적용됌-->
+      <URL value="@../../resource/itnews.css" />
+   </stylesheets>
+</Pane>
